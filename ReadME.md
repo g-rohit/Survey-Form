@@ -1,2 +1,2 @@
-#Survey Form
-Built this survey form as a part of FreeCodeCamp Projects. Purely Bootstrap
+# Survey Form
+*Built this survey form as a part of FreeCodeCamp Projects. Purely Bootstrap.*
