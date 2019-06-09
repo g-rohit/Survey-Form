@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+      <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Survey form</title>
+<style>
+         form {
+            width: 50% !important;
+        }
+
+        @media only screen and (max-width:786px) {
+
+
+            form {
+                width: 100% !important;
+            }
+        }
+</style>
+  
+ 
+
+  
+</head>
+
+<body>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="container-fluid bg-info" id="main-container">
+        <div class="container text-white">
+            <h1 class="text-center" id="title">Survey Form</h1>
+            <p id="description" class="text-center">Please fill and choose the appropriate information and
+                complete the below survey
+            </p>
+            <div class="row d-flex justify-content-center pb-5">
+
+                <form action="" id="survey-form" class="bg-dark p-3 rounded">
+                    <div class="col mt-3">
+                        <label for="userName" id="name-label">First and last name*</label>
+                        <input type="text" class="form-control" name="" id="name" placeholder="Enter your full name"
+                            required>
+                    </div>
+                    <div class="col mt-3">
+                        <label for="userEmail" id="email-label">Email Address*</label>
+                        <input type="email" class="form-control" name="" id="email"
+                            placeholder="Please enter your email ID" required>
+                    </div>
+                    <div class="col mt-3">
+                        <label for="userAge" id="number-label">Enter your age*</label>
+                        <input type="number" class="form-control" name="" id="number" min="12" max="99"
+                            placeholder="Please enter your age" required>
+                    </div>
+                    <div class="col mt-3">
+                        <label for="userMobileNumber" id="Mobnumber-label">Mobile number</label>
+                        <input type="tel" class="form-control" name="" id="Mobnumber"
+                            placeholder="Please enter your Mobile number">
+                    </div>
+                    <div class="col mt-3">
+                        <label for="dropDownList" id="continentDropdown-label">Select continent</label>
+                        <select name="select-continent" id="dropdown" class="custom-select">
+                            <option value="Asia">Asia</option>
+                            <option value="Africa">Africa</option>
+                            <option value="North America">North America</option>
+                            <option value="South America">South America</option>
+                            <option value="Antarctica">Antarctica</option>
+                            <option value="Europe">Europe</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+                    </div>
+                    <div class="col mt-3">
+                        <label for="selectInterest">Choose your Interest:</label>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1" name="customRadio" value="1"
+                                class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio1">UI Developer</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="customRadio" value="2"
+                                class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio2">UI Designer</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio3" name="customRadio" value="3"
+                                class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio3">UX Designer</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio4" name="customRadio" value="4"
+                                class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio4">Back end Developer</label>
+                        </div>
+                    </div>
+                    <div class="col mt-3">
+                        <label for="customCheck1">Your source of learning new things:</label>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="learningSource" class="custom-control-input" value="1"
+                                id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1">Youtube</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="learningSource" class="custom-control-input" value="2"
+                                id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2">Udemy</label>
+
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="learningSource" class="custom-control-input" value="3"
+                                id="customCheck3">
+                            <label class="custom-control-label" for="customCheck3">Skill Share</label>
+
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="learningSource" class="custom-control-input" value="4"
+                                id="customCheck4">
+                            <label class="custom-control-label" for="customCheck4">Udacity</label> </div>
+                    </div>
+                    <div class="col mt-3">
+                        <label for="writeSummary">Write a breif summary about yourself:</label>
+
+                        <textarea rows="4" placeholder="Write couple of lines about yourself and your Interests"
+                            class="form-control"></textarea>
+                    </div>
+                    <div class="col mt-3">
+                        <button class="btn btn-warning" type="submit" id="submit">Submit</button>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+  
+  
+
+</body>
+
+</html>
